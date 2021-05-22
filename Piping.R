@@ -1,0 +1,6 @@
+orgData = read_csv("StudyArea.csv", col_types = list(UNIT = col_character(), OUTDATED = col_character()), col_names = TRUE) 
+  View(orgData)
+orgData = filter(orgData, STATE == "Idaho")
+View(orgData)
+orgData = select(orgData, YR = YEAR_, Cause = CAUSE, Total = TOTALACRES) 
+  group_by(Cause, YR)
