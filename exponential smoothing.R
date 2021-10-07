@@ -99,7 +99,6 @@ p2 <- autoplot(holt.goog.opt) +
 
 gridExtra::grid.arrange(p1, p2, nrow = 1)
 
-
 ##### Holt-Winters method for forecasting on seasonal data
 autoplot(decompose(qcement))
 
