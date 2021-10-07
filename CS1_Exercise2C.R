@@ -12,5 +12,3 @@ df%>%
   ggplot(mapping = aes(x = YR, y = log(totalacres), colour = CAUSE)) +geom_point() +
   geom_smooth(method = lm, se = TRUE) + ggtitle("Total Acres Burned") + xlab("Year") +
   ylab("Log of total acres burned") + theme_dark()
-  
-  
