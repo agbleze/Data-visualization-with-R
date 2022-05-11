@@ -1,6 +1,5 @@
-## creating sf geometries    
+## creating sf geometries
 library(sf)
-library(ggplot2)
 st_point(c(4, 3))
 
 st_point(c(5, 3, 2))
